@@ -4,18 +4,20 @@
  */
 package main;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jimer
  */
 public class MenuTienda {
 
-    private String opcion;
+    private int opcion;
 
     public void MenuPrincipal() {
 
         do {
-            opcion = ("""
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("""
                       ----MENÚ TIENDA----
                       1.Registrar producto
                       2.Mostrar producto
@@ -25,8 +27,8 @@ public class MenuTienda {
                       6.Calcular valor total del inventario
                       7.Salir
                       
-                      """);
-        }while(opcion != 7)
+                      """));
+        }while(opcion != 7);
     }//fin método MenuPrincipal
 
 }//Fin de la clase
