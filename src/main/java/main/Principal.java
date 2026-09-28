@@ -11,6 +11,10 @@ package main;
 public class Principal {
 
     public static void main(String[] args) {
+        MenuTienda menu = new MenuTienda();
+        
+        menu.MenuPrincipal();
+        
         
     }
 }
